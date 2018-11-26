@@ -1,0 +1,75 @@
+<div class="edit-tab-with-sidemenu">
+
+    <!-- OPTIONS -->
+    <div class="edit-tab-content">
+        <div class="section gf-form-group">
+            <h5 class="section-heading">Display Options</h5>
+            <div class="gf-form">
+                <label class="gf-form-label width-7">Graph Title</label>
+                <input type="text" class="gf-form-input" ng-model="ctrl.panel.plotlyConfig.layout.title" ng-change="ctrl.onConfigChanged()"/>
+            </div>
+            <div class="gf-form">
+                <label class="gf-form-label width-7">X axis title</label>
+                <input type="text" class="gf-form-input" ng-model="ctrl.panel.plotlyConfig.layout.scene.xaxis.title" ng-change="ctrl.onConfigChanged()"/>
+            </div>
+            <div class="gf-form">
+                <label class="gf-form-label width-7">Y axis title</label>
+                <input type="text" class="gf-form-input" ng-model="ctrl.panel.plotlyConfig.layout.scene.yaxis.title" ng-change="ctrl.onConfigChanged()"/>
+            </div>
+            <div class="gf-form">
+                <label class="gf-form-label width-7">Z axis title</label>
+                <input type="text" class="gf-form-input" ng-model="ctrl.panel.plotlyConfig.layout.scene.zaxis.title" ng-change="ctrl.onConfigChanged()"/>
+            </div>
+        </div>
+
+        <div class="section gf-form-group">
+            <h5 class="section-heading">Settings</h5>
+
+            <div class="gf-form">
+                <label class="gf-form-label width-7">Date Field</label>
+                <input type="text" class="gf-form-input" ng-model="ctrl.panel.plotlyConfig.settings.date_field" ng-change="ctrl.onConfigChanged()"/>
+            </div>
+             <div class="gf-form">
+                <label class="gf-form-label width-7">Colorscale</label>
+                <div class="gf-form-select-wrapper max-width-14">
+                  <select class="gf-form-input" ng-model="ctrl.panel.plotlyConfig.settings.colorscale" ng-change="ctrl.onConfigChanged()">
+                    <option value="Grey">Grey</option>
+                    <option value="YlGnBu">YlGnBu</option>
+                    <option value="Greens">Greens</option>
+                    <option value="YlOrRd">YlOrRd</option>
+                    <option value="Bluered">Bluered</option>
+                    <option value="RdBu">RdBu</option>
+                    <option value="Reds">Reds</option>
+                    <option value="Blues">Blues</option>
+                    <option value="Picnic">Picnic</option>
+                    <option value="Rainbow">Rainbow</option>
+                    <option value="Portland">Portland</option>
+                    <option value="Jet">Jet</option>
+                    <option value="Hot">Hot</option>
+                    <option value="Blackbody">Blackbody</option>
+                    <option value="Earth">Earth</option>
+                    <option value="Electric">Electric</option>
+                    <option value="Viridis">Viridis</option>
+                    <option value="Cividi">Cividi</option>
+                  </select>
+                </div>
+              </div>
+              <gf-form-switch
+                class="gf-form"
+                label="Show Scale:"
+                label-class="gf-form-label width-7"
+                checked="ctrl.panel.plotlyConfig.settings.showscale"
+                on-change="ctrl.onConfigChanged()"></gf-form-switch>
+            <div class="gf-form">
+                <label class="gf-form-label width-7">Graph Type</label>
+                <div class="gf-form-select-wrapper max-width-14">
+                  <select class="gf-form-input" ng-model="ctrl.panel.plotlyConfig.settings.graph_type" ng-change="ctrl.onConfigChanged()">
+                    <option value="surface">surface</option>
+                    <option value="mesh3d">mesh3d</option>
+                  </select>
+                </div>
+              </div>
+        </div>
+
+    </div>
+</div>

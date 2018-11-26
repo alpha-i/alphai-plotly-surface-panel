@@ -1,0 +1,28 @@
+{
+  "type": "panel",
+  "name": "Plotly surface",
+  "id": "alphai-plotly-surface-panel",
+
+  "info": {
+    "description": "Surface Plot",
+    "author": {
+      "name": "Alpha-I"
+    },
+    "keywords": ["plotly", "surface", "panel"],
+    "logos": {
+      "small": "img/plotly_logo.svg",
+      "large": "img/plotly_logo.svg"
+    },
+    "links": [
+      {"name": "Plot.ly", "url": "https://plot.ly/javascript/"},
+      {"name": "Alpha-I", "url": "http://www.alpha-i.co/"}
+    ],
+    "version": "0.0.1",
+    "updated": "2018-10-25"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "5.x.x",
+    "plugins": []
+  }
+}
